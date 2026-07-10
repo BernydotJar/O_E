@@ -23,4 +23,5 @@
 ## 2026-07-10 — 002 Student Digital Twin
 
 - `pending -> spec_ready` — Requirements, design, tasks, acceptance criteria, privacy boundaries, junior-learner safeguards, intervention workflow, counterfactual simulation limits, and verification plan defined on `feature/002-student-digital-twin-spec`.
-- Human approval required before implementation.
+- `approved` — PR #5 merged into `main` at `852174c941fb630ea9f776c8b78fa18756d9481f`; specification branch deleted.
+- `in_progress` — Student Digital Twin workspace implemented on `feature/002-student-digital-twin-implementation`; local verification pending.
