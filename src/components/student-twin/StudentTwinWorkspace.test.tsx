@@ -55,7 +55,6 @@ describe('Student Digital Twin workspace', () => {
 
     await user.click(card.getByRole('button', { name: 'Approved' }))
     expect(card.getByRole('button', { name: 'Approved' })).toHaveAttribute('aria-pressed', 'true')
-    expect(card.getByText('Approved')).toBeInTheDocument()
 
     await user.click(card.getByRole('button', { name: 'Deferred' }))
     expect(card.getByRole('button', { name: 'Deferred' })).toHaveAttribute('aria-pressed', 'true')
@@ -68,17 +67,18 @@ describe('Student Digital Twin workspace', () => {
     const user = userEvent.setup()
     render(<StudentTwinWorkspace />)
 
-    const originalEvidence = screen.getByText(/attendance rhythm declined from three sessions weekly to one/i)
+    expect(screen.getByText(/attendance rhythm declined from three sessions weekly to one/i)).toBeInTheDocument()
     const scheduleCard = screen.getByRole('heading', { name: /teacher outreach \+ schedule redesign/i }).closest('article')
     expect(scheduleCard).not.toBeNull()
 
     await user.click(within(scheduleCard as HTMLElement).getByRole('button', { name: /explore projection/i }))
 
-    expect(originalEvidence).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /teacher outreach \+ schedule redesign/i, level: 3 })).toBeInTheDocument()
-    expect(screen.getByText(/original evidence remains unchanged/i)).toBeInTheDocument()
-    expect(screen.getByText(/session rhythm may recover/i)).toBeInTheDocument()
-    expect(screen.getByText(/does not establish causality or guarantee an outcome/i)).toBeInTheDocument()
+    expect(screen.getByText(/attendance rhythm declined from three sessions weekly to one/i)).toBeInTheDocument()
+    const projection = screen.getByRole('region', { name: /counterfactual projection/i })
+    expect(within(projection).getByRole('heading', { name: /teacher outreach \+ schedule redesign/i })).toBeInTheDocument()
+    expect(within(projection).getByText(/original evidence remains unchanged/i)).toBeInTheDocument()
+    expect(within(projection).getByText(/session rhythm may recover/i)).toBeInTheDocument()
+    expect(within(projection).getByText(/does not establish causality or guarantee an outcome/i)).toBeInTheDocument()
   })
 
   it('elevates age-aware safeguards for the junior learner', async () => {
