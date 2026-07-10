@@ -30,8 +30,8 @@
       "id": "002-student-digital-twin",
       "title": "Student Digital Twin",
       "mode": "MVP",
-      "status": "pending",
-      "summary": "Simulate an evidence-based learner model with goals, proficiency, misconceptions, motivation, learning preferences, churn risk, and recommended interventions."
+      "status": "spec_ready",
+      "summary": "Create a privacy-aware, explainable learner-state workspace that separates evidence, inference, uncertainty, human intervention decisions, projected outcomes, and validated learning impact."
     },
     {
       "id": "003-teacher-intelligence-platform",
