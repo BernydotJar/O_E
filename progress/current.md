@@ -2,9 +2,10 @@
 
 ## Active Feature
 
-None.
-
-The repository currently has no active feature. The next candidate features remain `pending` and require specification plus human approval before implementation begins.
+- Feature: `002-student-digital-twin`
+- Mode: `MVP`
+- State: `spec_ready`
+- Branch: `feature/002-student-digital-twin-spec`
 
 ## Completed Features
 
@@ -24,13 +25,22 @@ The repository currently has no active feature. The next candidate features rema
 - Typecheck, tests, build, development runtime, responsive review, keyboard tour, reduced motion, five-minute narrative, and three-minute tour passed
 - Reviewer artifact approved AC-01 through AC-16
 
-## Pending Features
+## SPEC-002 Scope
 
-- `002-student-digital-twin`
-- `003-teacher-intelligence-platform`
-- `004-agentic-build-engine`
-- `005-executive-blueprint`
+The Student Digital Twin specification defines:
+
+- three synthetic learner scenarios: adult professional, junior learner, and advanced learner;
+- goals, target outcomes, proficiency, engagement, confidence, misconceptions, preferences, intervention history, risk, confidence, and unknowns;
+- evidence timeline with source-type labels;
+- explicit separation of observed evidence, derived features, inference, and unknown information;
+- explainable risk or opportunity assessment with contributing factors and counter-signals;
+- multiple candidate interventions with rationale, owner, effort, urgency, limitation, and validation target;
+- human approve, defer, or reject decisions;
+- bounded counterfactual projections that remain synthetic and non-causal;
+- behavioral, learning, experience, retention, and decision-gate measurements;
+- privacy, data minimization, purpose limitation, age-aware controls, and junior-learner safeguards;
+- preservation of the Executive Tour and Organizational Cortex journeys.
 
 ## Current Gate
 
-Select one pending feature, create its bounded specification, and obtain explicit human approval before changing application code.
+Human approval is required before implementation. No application code may change while `002-student-digital-twin` remains `spec_ready`.
