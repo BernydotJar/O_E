@@ -1,0 +1,58 @@
+{
+  "repository": "O_E",
+  "program": "Open English AI-Native Transformation",
+  "tagline": "Every interaction teaches the company.",
+  "allowed_statuses": [
+    "pending",
+    "spec_ready",
+    "approved",
+    "in_progress",
+    "review",
+    "done",
+    "blocked"
+  ],
+  "features": [
+    {
+      "id": "000-organizational-cortex",
+      "title": "Organizational Cortex MVP",
+      "mode": "MVP",
+      "status": "spec_ready",
+      "summary": "Create an executive-grade simulation showing how student, teacher, and engineering interactions become signals, organizational memory, recommendations, and measurable outcomes."
+    },
+    {
+      "id": "001-executive-ai-native-landing",
+      "title": "Executive AI-Native Landing",
+      "mode": "MVP",
+      "status": "pending",
+      "summary": "Build the narrative landing experience that explains the transformation thesis, current-state problem, future-state operating model, and 90-day plan."
+    },
+    {
+      "id": "002-student-digital-twin",
+      "title": "Student Digital Twin",
+      "mode": "MVP",
+      "status": "pending",
+      "summary": "Simulate an evidence-based learner model with goals, proficiency, misconceptions, motivation, learning preferences, churn risk, and recommended interventions."
+    },
+    {
+      "id": "003-teacher-intelligence-platform",
+      "title": "Teacher Intelligence Platform",
+      "mode": "MVP",
+      "status": "pending",
+      "summary": "Demonstrate how high-performing teaching behaviors are identified and converted into measurable recommendations that improve the broader teacher population."
+    },
+    {
+      "id": "004-agentic-build-engine",
+      "title": "Agentic Build Engine",
+      "mode": "MVP",
+      "status": "pending",
+      "summary": "Visualize the spec-to-deploy engineering loop, agent roles, evaluation coverage, review gates, and delivery evidence."
+    },
+    {
+      "id": "005-executive-blueprint",
+      "title": "AI-Native Transformation Blueprint",
+      "mode": "MVP",
+      "status": "pending",
+      "summary": "Generate the CEO, CFO, and Board transformation document from approved program specifications and architecture decisions."
+    }
+  ]
+}
