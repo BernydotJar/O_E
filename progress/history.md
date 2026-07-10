@@ -8,3 +8,9 @@
 - Verification — `npm install`, `npm run typecheck`, `npm test`, `npm run build`, and `npm run dev` reported PASS by the repository owner.
 - Responsive review — PASS.
 - `review` — Reviewer artifact created with AC-01 through AC-10 traceability and recommendation to approve for merge.
+- `done` — PR #2 merged into `main`; implementation branch deleted.
+
+## 2026-07-09 — 001 Executive AI-Native Landing
+
+- `pending -> spec_ready` — Executive narrative, operating model, strategic choices, metrics, risks, roadmap, and guided-tour requirements defined on `feature/001-executive-ai-native-landing-spec`.
+- Human approval required before implementation.
