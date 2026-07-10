@@ -2,39 +2,41 @@
 
 ## Active Feature
 
-- Feature: `000-organizational-cortex`
+- Feature: `001-executive-ai-native-landing`
 - Mode: `MVP`
-- State: `review`
-- Branch: `feature/000-organizational-cortex-implementation`
+- State: `spec_ready`
+- Branch: `feature/001-executive-ai-native-landing-spec`
 
-## Implemented
+## Previous Feature
 
-- React + TypeScript + Vite application scaffold
-- Executive AI-native transformation landing
-- Organizational Cortex closed-loop visualization
-- Student Digital Twin retention simulation
-- Teacher Intelligence behavior-mining simulation
-- Agentic Build Engine evidence simulation
-- Board-level metrics and 30/60/90-day roadmap
-- Responsive and reduced-motion CSS
-- Interaction tests for the primary journeys
+`000-organizational-cortex` is complete.
 
-## Verification Evidence
+Evidence:
 
-Executed successfully by the repository owner on 2026-07-09 in a connected local environment:
+- PR #2 merged into `main`.
+- Typecheck, tests, build, development runtime, and responsive review passed.
+- Reviewer artifact approved AC-01 through AC-10.
 
-```text
-npm install          PASS
-npm run typecheck    PASS
-npm test             PASS
-npm run build        PASS
-npm run dev          PASS
-```
+## SPEC-001 Scope
 
-Manual responsive review: PASS.
+The next increment transforms the initial landing into a five-minute executive decision narrative with:
 
-The application rendered correctly in the reviewed responsive layouts, and the primary executive and domain interactions were confirmed working.
+- transformation case and urgency;
+- current-state hypotheses requiring discovery;
+- an organizational-learning definition of AI-native;
+- AI-Native Product and AI-Native Company;
+- a four-layer future operating model;
+- build, integrate, and defer decisions;
+- linked learning, retention, engineering, platform, and economic metrics;
+- transformation risks and controls;
+- an evidence-driven 30/60/90-day plan;
+- a nine-stage guided Executive Tour;
+- explicit executive decisions requested.
 
 ## Current Gate
 
-The implementation has moved to formal review. The reviewer must validate acceptance-criterion traceability, synthetic-data disclosure, executive narrative clarity, accessibility basics, and scope boundaries before the feature can move to `done`.
+Human approval is required before implementation. No application code should change while `001-executive-ai-native-landing` remains `spec_ready`.
+
+## External Research Note
+
+The two supplied YouTube IDs could not be retrieved or transcribed through the currently available web access. Their content has not been represented as validated source material in this specification. They remain pending inputs for a later evidence update if a transcript becomes available.
