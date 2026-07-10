@@ -4,7 +4,7 @@
 
 - Feature: `001-executive-ai-native-landing`
 - Mode: `MVP`
-- State: `in_progress`
+- State: `review`
 - Branch: `feature/001-executive-ai-native-landing-implementation`
 
 ## Approval Evidence
@@ -33,27 +33,31 @@
 - Responsive styles for the new narrative
 - Automated tests for narrative, tour, strategic choices, evaluation separation, and SPEC-000 regression
 
-## Verification Status
+## Verification Evidence
 
-The implementation commands are configured but execution evidence for this branch is pending:
+Executed successfully by the repository owner on 2026-07-09 in a connected local environment:
 
 ```text
-npm install
-npm run typecheck
-npm test
-npm run build
-npm run dev
+npm install          PASS
+npm run typecheck    PASS
+npm test             PASS
+npm run build        PASS
+npm run dev          PASS
 ```
 
-Manual verification must include:
+Manual verification: PASS.
 
-- desktop, tablet, and mobile review;
+Reviewed successfully:
+
+- desktop, tablet, and mobile layouts;
 - keyboard-only Executive Tour;
+- Escape and arrow-key controls;
 - reduced-motion behavior;
 - five-minute explore narrative;
 - three-minute guided tour;
-- confirmation that hypotheses are never presented as internal facts.
+- discovery hypotheses remain visibly distinct from confirmed internal facts;
+- existing Organizational Cortex simulations remain functional.
 
 ## Current Gate
 
-Run verification in a connected local environment, fix any failures, then move the feature to `review` and produce AC-01 through AC-16 reviewer evidence.
+The feature has moved to formal review. Reviewer evidence covers AC-01 through AC-16 and recommends approval for merge. The feature must remain `review` until PR #4 is merged.
