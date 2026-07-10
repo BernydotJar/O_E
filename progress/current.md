@@ -4,39 +4,56 @@
 
 - Feature: `001-executive-ai-native-landing`
 - Mode: `MVP`
-- State: `spec_ready`
-- Branch: `feature/001-executive-ai-native-landing-spec`
+- State: `in_progress`
+- Branch: `feature/001-executive-ai-native-landing-implementation`
 
-## Previous Feature
+## Approval Evidence
 
-`000-organizational-cortex` is complete.
+- PR #3 merged into `main`.
+- The merged specification approved the nine-stage narrative, expanded operating model, six operating principles, human-agency controls, curriculum refresh loop, dual evaluation model, impact roadmap, risks, and Executive Tour scope.
 
-Evidence:
+## Implemented
 
-- PR #2 merged into `main`.
-- Typecheck, tests, build, development runtime, and responsive review passed.
-- Reviewer artifact approved AC-01 through AC-10.
+- Data-driven nine-stage executive narrative
+- Guided Executive Tour with progress, previous, next, restart, exit, Escape, and arrow-key support
+- Why-change-now section
+- Discovery hypotheses with `TO VALIDATE` labels and internal-access disclaimer
+- Six AI-native operating principles
+- Human evidence-to-memory approval loop
+- AI-Native Product + AI-Native Company relationship
+- Four-layer future-state operating model
+- Governed curriculum refresh loop
+- Build / integrate / defer decision matrix
+- Baseline LMS versus AI-native differentiation
+- Preserved Organizational Cortex domain simulation
+- Dual model-platform versus educational-impact evaluation
+- AI economics and selective-compute controls
+- Product and impact roadmaps with decision gates
+- Explicit executive decisions requested
+- Responsive styles for the new narrative
+- Automated tests for narrative, tour, strategic choices, evaluation separation, and SPEC-000 regression
 
-## SPEC-001 Scope
+## Verification Status
 
-The next increment transforms the initial landing into a five-minute executive decision narrative with:
+The implementation commands are configured but execution evidence for this branch is pending:
 
-- transformation case and urgency;
-- current-state hypotheses requiring discovery;
-- an organizational-learning definition of AI-native;
-- AI-Native Product and AI-Native Company;
-- a four-layer future operating model;
-- build, integrate, and defer decisions;
-- linked learning, retention, engineering, platform, and economic metrics;
-- transformation risks and controls;
-- an evidence-driven 30/60/90-day plan;
-- a nine-stage guided Executive Tour;
-- explicit executive decisions requested.
+```text
+npm install
+npm run typecheck
+npm test
+npm run build
+npm run dev
+```
+
+Manual verification must include:
+
+- desktop, tablet, and mobile review;
+- keyboard-only Executive Tour;
+- reduced-motion behavior;
+- five-minute explore narrative;
+- three-minute guided tour;
+- confirmation that hypotheses are never presented as internal facts.
 
 ## Current Gate
 
-Human approval is required before implementation. No application code should change while `001-executive-ai-native-landing` remains `spec_ready`.
-
-## External Research Note
-
-The two supplied YouTube IDs could not be retrieved or transcribed through the currently available web access. Their content has not been represented as validated source material in this specification. They remain pending inputs for a later evidence update if a transcript becomes available.
+Run verification in a connected local environment, fix any failures, then move the feature to `review` and produce AC-01 through AC-16 reviewer evidence.
