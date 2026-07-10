@@ -19,3 +19,8 @@
 - Manual review — Desktop, tablet, mobile, keyboard tour, reduced motion, five-minute narrative, three-minute tour, hypothesis labeling, and SPEC-000 regression all PASS.
 - `review` — Reviewer artifact created with AC-01 through AC-16 traceability and recommendation to approve for merge.
 - `done` — PR #4 merged into `main` at `7dab6c79bddea374ef2da5d4a6ed749ffe7e17e5`; implementation branch deleted.
+
+## 2026-07-10 — 002 Student Digital Twin
+
+- `pending -> spec_ready` — Requirements, design, tasks, acceptance criteria, privacy boundaries, junior-learner safeguards, intervention workflow, counterfactual simulation limits, and verification plan defined on `feature/002-student-digital-twin-spec`.
+- Human approval required before implementation.
