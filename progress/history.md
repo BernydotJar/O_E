@@ -18,3 +18,4 @@
 - Verification — `npm install`, `npm run typecheck`, `npm test`, `npm run build`, and `npm run dev` reported PASS by the repository owner.
 - Manual review — Desktop, tablet, mobile, keyboard tour, reduced motion, five-minute narrative, three-minute tour, hypothesis labeling, and SPEC-000 regression all PASS.
 - `review` — Reviewer artifact created with AC-01 through AC-16 traceability and recommendation to approve for merge.
+- `done` — PR #4 merged into `main` at `7dab6c79bddea374ef2da5d4a6ed749ffe7e17e5`; implementation branch deleted.
