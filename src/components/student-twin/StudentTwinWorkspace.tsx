@@ -100,7 +100,7 @@ function StudentTwinWorkspace() {
         })}
       </div>
 
-      <div className="projection-panel" aria-live="polite">
+      <div className="projection-panel" role="region" aria-label="Counterfactual projection" aria-live="polite">
         <div><p className="eyebrow">COUNTERFACTUAL · DIRECTIONAL HYPOTHESIS</p><h3>{activeIntervention.title}</h3><p>Original evidence remains unchanged. This projection does not establish causality or guarantee an outcome.</p></div>
         <div className="projection-grid">{activeIntervention.projection.map((item) => <article key={item}><span>PROJECTED SIGNAL</span><strong>{item}</strong></article>)}</div>
         <div className="projection-assumptions"><strong>Assumptions:</strong> intervention is delivered as designed, learner context remains stable, and leading indicators are measured in a controlled pilot.</div>
