@@ -1,0 +1,343 @@
+.student-twin {
+  margin-top: 4rem;
+  background: linear-gradient(180deg, rgba(9, 17, 28, 0.98), rgba(15, 26, 40, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 2rem;
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.35);
+}
+
+.student-twin-header,
+.twin-section-heading,
+.intervention-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.student-twin-header h2,
+.twin-section-heading h3 {
+  margin: 0;
+}
+
+.student-twin-lede {
+  max-width: 760px;
+  color: var(--muted);
+}
+
+.learner-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 2rem 0 1rem;
+}
+
+.learner-selector button {
+  min-height: 88px;
+  padding: 1rem;
+  text-align: left;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.learner-selector button.active {
+  border-color: rgba(183, 255, 96, 0.75);
+  background: rgba(183, 255, 96, 0.08);
+}
+
+.learner-selector span,
+.learner-selector small {
+  display: block;
+}
+
+.learner-selector span {
+  font-weight: 800;
+}
+
+.learner-selector small,
+.snapshot-grid small,
+.evidence-timeline small {
+  margin-top: 0.35rem;
+  color: var(--muted);
+}
+
+.twin-disclosure,
+.projection-assumptions,
+.prohibited-use {
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 215, 92, 0.28);
+  border-radius: 0.8rem;
+  background: rgba(255, 215, 92, 0.06);
+}
+
+.learner-snapshot {
+  margin: 1.5rem 0 3rem;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.snapshot-identity span,
+.snapshot-grid span,
+.state-dimension-grid span,
+.explainability-grid span,
+.intervention-top span,
+.projection-grid span,
+.measurement-grid span {
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.snapshot-identity h3 {
+  margin: 0.4rem 0;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.snapshot-grid,
+.state-dimension-grid,
+.projection-grid,
+.measurement-grid,
+.safeguard-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.snapshot-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.5rem;
+}
+
+.snapshot-grid article,
+.state-dimension-grid article,
+.explainability-grid article,
+.projection-grid article,
+.measurement-grid article,
+.safeguard-list article {
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 0.9rem;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.snapshot-grid strong,
+.snapshot-grid small {
+  display: block;
+}
+
+.unknown-card {
+  grid-column: span 2;
+}
+
+.state-dimension-grid {
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 3rem;
+}
+
+.state-dimension-grid strong,
+.state-dimension-grid p {
+  display: block;
+  margin: 0.45rem 0 0;
+}
+
+.twin-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+}
+
+.evidence-timeline,
+.explainability-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.evidence-timeline article {
+  display: grid;
+  grid-template-columns: 130px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-left: 2px solid rgba(183, 255, 96, 0.5);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.evidence-timeline span,
+.evidence-timeline small {
+  display: block;
+}
+
+.evidence-timeline p {
+  margin: 0;
+}
+
+.evidence-timeline > article > strong {
+  font-size: 0.78rem;
+}
+
+.explainability-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.explainability-grid ul {
+  padding-left: 1rem;
+}
+
+.intervention-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.intervention-grid > article {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.intervention-grid > article.active {
+  border-color: rgba(104, 210, 255, 0.65);
+}
+
+.intervention-grid dl {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.intervention-grid dt {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.intervention-grid dd {
+  margin: 0.2rem 0 0;
+}
+
+.decision-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.decision-controls button,
+.projection-button {
+  padding: 0.65rem;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 0.7rem;
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+}
+
+.decision-controls button[aria-pressed='true'] {
+  background: rgba(183, 255, 96, 0.14);
+  border-color: rgba(183, 255, 96, 0.65);
+}
+
+.projection-button {
+  margin-top: 0.6rem;
+  font-weight: 800;
+}
+
+.projection-panel {
+  padding: 1.5rem;
+  border: 1px solid rgba(104, 210, 255, 0.28);
+  border-radius: 1.25rem;
+  background: radial-gradient(circle at top right, rgba(104, 210, 255, 0.11), transparent 40%), rgba(0, 0, 0, 0.2);
+}
+
+.projection-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem 0;
+}
+
+.measurement-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.decision-gates {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.decision-gates span {
+  padding: 0.7rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+
+.safeguard-list {
+  grid-template-columns: 1fr 1fr;
+}
+
+.prohibited-use {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .state-dimension-grid,
+  .intervention-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .twin-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .student-twin-header,
+  .twin-section-heading,
+  .intervention-top {
+    display: block;
+  }
+
+  .learner-selector,
+  .snapshot-grid,
+  .state-dimension-grid,
+  .intervention-grid,
+  .projection-grid,
+  .measurement-grid,
+  .safeguard-list,
+  .explainability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .unknown-card {
+    grid-column: auto;
+  }
+
+  .evidence-timeline article {
+    grid-template-columns: 1fr;
+  }
+
+  .decision-controls,
+  .decision-gates {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .student-twin *,
+  .student-twin *::before,
+  .student-twin *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
