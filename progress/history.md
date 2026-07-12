@@ -24,7 +24,7 @@
 
 - `pending -> spec_ready` — Requirements, design, tasks, acceptance criteria, privacy boundaries, junior-learner safeguards, intervention workflow, counterfactual simulation limits, and verification plan defined on `feature/002-student-digital-twin-spec`.
 - `approved` — PR #5 merged into `main` at `852174c941fb630ea9f776c8b78fa18756d9481f`; specification branch deleted.
-- `in_progress` — Student Digital Twin workspace implemented on `feature/002-student-digital-twin-implementation`.
+- `in_progress` — Student Digital Twin workspace implementation completed on `feature/002-student-digital-twin-implementation`.
 - Initial verification — Test isolation and TypeScript configuration defects identified and corrected; no product-behavior defect found.
 - Verification — `npm install`, `npm run typecheck`, `npm test` with 16 tests, `npm run build`, and `npm run dev` reported PASS by the repository owner.
 - Manual review — Desktop, tablet, mobile, keyboard controls, reduced motion, four-minute narrative, 30-second snapshot, shared-screen legibility, junior safeguards, non-causal projections, Executive Tour regression, and Organizational Cortex regression all PASS.
@@ -44,5 +44,12 @@
 
 - The Learning Intelligence Platform becomes the primary product direction.
 - The Executive Experience is retained as a hidden or role-gated strategic module rather than the default application.
-- `004-agentic-build-engine` and `005-executive-blueprint` remain pending and are deferred behind `P-000-learning-intelligence-platform-rebaseline`.
+- `004-agentic-build-engine` and `005-executive-blueprint` remain pending but are deferred behind `P-000-learning-intelligence-platform-rebaseline`.
 - No new product screen, backend service, agent, or integration should begin until the rebaseline specification is approved.
+
+## 2026-07-11 — P-000 Learning Intelligence Platform Rebaseline
+
+- `pending -> spec_ready` — Product vision, users, roles, jobs to be done, domains, information architecture, navigation, MVP scope, system boundaries, data and integration assumptions, evidence and auditability, human governance, metrics, team, roadmap, time and labor sizing, pilot strategy, and Executive Experience treatment were specified.
+- Scope evidence — Only P-000 specification files, the feature registry, progress records, and README current-state documentation are authorized to change.
+- Implementation gate — No application, backend, agent, integration, dependency, infrastructure, deployment, or real-data work is authorized.
+- Human gate — Approval is required before moving P-000 to `approved` or creating implementation specifications.

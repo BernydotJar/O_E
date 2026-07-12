@@ -1,35 +1,48 @@
 # Open English AI-Native Transformation
 
-A spec-driven prototype and executive transformation program for designing Open English as a unified AI-native learning company.
+A spec-driven product and transformation program for designing Open English as a unified AI-native learning company.
 
-This repository is intentionally built as evidence, not presentationware. The blueprint, prototype, architecture, metrics, and 90-day roadmap must emerge from approved specifications and reviewable implementation increments.
+This repository is intentionally built as evidence, not presentationware. Product architecture, prototypes, metrics, governance, and roadmap must emerge from approved specifications and reviewable implementation increments.
 
 ## North Star
 
 Open English becomes a learning organization whose product, knowledge, decisions, software, and operations improve continuously from every student, teacher, employee, and system interaction.
 
-## First MVP
+## Primary Product Direction
 
-`000-organizational-cortex` defines the minimum demonstrable learning loop:
+The primary product is the **Learning Intelligence Platform**: a governed operating layer that turns learning interactions into evidence, supports accountable human decisions, runs bounded interventions, measures outcomes, and preserves validated organizational learning.
+
+The existing Executive Experience is retained as a private, role-gated strategic module. It must not remain the anonymous or default authenticated landing experience.
+
+The current gate is:
 
 ```text
-Interaction -> Signal -> Evaluation -> Organizational Memory -> Recommendation -> Measured Outcome
+P-000-learning-intelligence-platform-rebaseline: spec_ready
 ```
 
-The first user-visible increment will be an executive-grade simulation of this loop across student retention, teacher augmentation, and agentic engineering.
+Human approval is required before any new product screen, backend service, agent, integration, dependency, infrastructure, or real-data workflow begins.
+
+## Learning Intelligence Loop
+
+```text
+Interaction -> Signal -> Evidence -> Interpretation -> Human decision
+-> Bounded intervention -> Outcome measurement -> Organizational memory
+```
 
 ## Delivery Model
 
 ```text
-idea -> spec_ready -> approved -> in_progress -> review -> done
+idea -> pending -> spec_ready -> approved -> in_progress -> review -> done
 ```
 
-No application code should be implemented before its requirements, design, tasks, file boundaries, acceptance criteria, and verification plan are approved.
+Additional stop state: `blocked`.
+
+No application code should be implemented before its requirements, design, tasks, file boundaries, acceptance criteria, verification plan, and human approval are present.
 
 ## Execution Modes
 
-- `MVP`: interview-ready, validated prototype with bounded scope, tests, evidence, and review.
-- `SHIP`: production-grade increment with security, privacy, data correctness, performance, accessibility, observability, and operational gates.
+- `MVP`: validated, bounded product increment with specifications, tests, evidence, and review.
+- `SHIP`: production-grade increment with privacy, security, data correctness, reliability, performance, accessibility, observability, operations, support, and cost gates.
 
 ## Repository Shape
 
@@ -47,4 +60,7 @@ packages/
 
 ## Current State
 
-The program begins with `000-organizational-cortex` in `spec_ready`. Human approval is required before implementation starts.
+- Features `000` through `003` are `done`.
+- `P-000-learning-intelligence-platform-rebaseline` is `spec_ready` and awaiting human approval.
+- `004-agentic-build-engine` and `005-executive-blueprint` remain pending behind the rebaseline.
+- No implementation of the rebaseline has started.
