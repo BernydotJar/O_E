@@ -37,7 +37,7 @@
       "id": "003-teacher-intelligence-platform",
       "title": "Teacher Intelligence Platform",
       "mode": "MVP",
-      "status": "spec_ready",
+      "status": "in_progress",
       "summary": "Create a teacher-owned, evidence-driven coaching workspace that links observable lesson behaviors to contextual hypotheses, bounded experiments, learner outcomes, and provisional shared practices without opaque scoring or punitive ranking."
     },
     {

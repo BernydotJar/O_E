@@ -34,4 +34,5 @@
 ## 2026-07-11 — 003 Teacher Intelligence Platform
 
 - `pending -> spec_ready` — Three synthetic teacher scenarios, lesson-evidence provenance, behavior-to-outcome interpretation, teacher-owned coaching decisions, bounded experiments, outcome review, shared practice memory, anti-surveillance controls, acceptance criteria, risks, stop conditions, and verification plan defined on `feature/003-teacher-intelligence-platform-spec`.
-- Human approval required before implementation.
+- `approved` — PR #7 merged into `main` at `e459f07d80e1f6669be00b96085fc70e7fdeb2ed`; specification branch deleted.
+- `in_progress` — Teacher Intelligence Platform workspace implementation started on `feature/003-teacher-intelligence-platform-implementation`.
