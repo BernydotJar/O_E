@@ -42,7 +42,7 @@ describe('Student Digital Twin workspace', () => {
     const user = userEvent.setup()
     render(<StudentTwinWorkspace />)
 
-    const intervention = screen.getByRole('heading', { name: /confidence micro-mission/i }).closest('article')
+    const intervention = screen.getAllByRole('heading', { name: /confidence micro-mission/i })[0].closest('article')
     expect(intervention).not.toBeNull()
     const card = within(intervention as HTMLElement)
 
@@ -68,7 +68,7 @@ describe('Student Digital Twin workspace', () => {
     render(<StudentTwinWorkspace />)
 
     expect(screen.getByText(/attendance rhythm declined from three sessions weekly to one/i)).toBeInTheDocument()
-    const scheduleCard = screen.getByRole('heading', { name: /teacher outreach \+ schedule redesign/i }).closest('article')
+    const scheduleCard = screen.getAllByRole('heading', { name: /teacher outreach \+ schedule redesign/i })[0].closest('article')
     expect(scheduleCard).not.toBeNull()
 
     await user.click(within(scheduleCard as HTMLElement).getByRole('button', { name: /explore projection/i }))

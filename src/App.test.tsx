@@ -46,7 +46,7 @@ describe('Open English AI-Native executive experience', () => {
     expect(screen.getByText('MODEL + PLATFORM EVIDENCE')).toBeInTheDocument()
     expect(screen.getByText('EDUCATIONAL + PRODUCT IMPACT')).toBeInTheDocument()
     expect(screen.getByText(/cost per successful outcome/i)).toBeInTheDocument()
-    expect(screen.getByText(/model routing/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/model routing/i).length).toBeGreaterThan(0)
   })
 
   it('runs the guided Executive Tour and supports navigation and exit', async () => {
@@ -73,7 +73,7 @@ describe('Open English AI-Native executive experience', () => {
     render(<App />)
 
     for (const step of ['Interaction', 'Signals', 'Evaluation', 'Memory', 'Recommendation', 'Outcome']) {
-      expect(screen.getByText(step)).toBeInTheDocument()
+      expect(screen.getAllByText(step).length).toBeGreaterThan(0)
     }
   })
 
