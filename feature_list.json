@@ -37,8 +37,8 @@
       "id": "003-teacher-intelligence-platform",
       "title": "Teacher Intelligence Platform",
       "mode": "MVP",
-      "status": "pending",
-      "summary": "Demonstrate how high-performing teaching behaviors are identified and converted into measurable recommendations that improve the broader teacher population."
+      "status": "spec_ready",
+      "summary": "Create a teacher-owned, evidence-driven coaching workspace that links observable lesson behaviors to contextual hypotheses, bounded experiments, learner outcomes, and provisional shared practices without opaque scoring or punitive ranking."
     },
     {
       "id": "004-agentic-build-engine",
