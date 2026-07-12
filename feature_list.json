@@ -41,18 +41,25 @@
       "summary": "Create a teacher-owned, evidence-driven coaching workspace that links observable lesson behaviors to contextual hypotheses, bounded experiments, learner outcomes, and provisional shared practices without opaque scoring or punitive ranking."
     },
     {
+      "id": "P-000-learning-intelligence-platform-rebaseline",
+      "title": "Learning Intelligence Platform Rebaseline",
+      "mode": "MVP",
+      "status": "spec_ready",
+      "summary": "Rebaseline the repository around Learning Intelligence Platform as the primary product, defining users, jobs, domains, information architecture, MVP, system boundaries, data, governance, metrics, team, roadmap, sizing, pilot strategy, and the private treatment of Executive Experience before further implementation."
+    },
+    {
       "id": "004-agentic-build-engine",
       "title": "Agentic Build Engine",
       "mode": "MVP",
       "status": "pending",
-      "summary": "Visualize the spec-to-deploy engineering loop, agent roles, evaluation coverage, review gates, and delivery evidence."
+      "summary": "Visualize the spec-to-deploy engineering loop, agent roles, evaluation coverage, review gates, and delivery evidence. Deferred until P-000 is approved."
     },
     {
       "id": "005-executive-blueprint",
       "title": "AI-Native Transformation Blueprint",
       "mode": "MVP",
       "status": "pending",
-      "summary": "Generate the CEO, CFO, and Board transformation document from approved program specifications and architecture decisions."
+      "summary": "Generate the CEO, CFO, and Board transformation document from approved program specifications and architecture decisions. Deferred until P-000 is approved."
     }
   ]
 }
