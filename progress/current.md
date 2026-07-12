@@ -2,17 +2,7 @@
 
 ## Active Feature
 
-- Feature: `003-teacher-intelligence-platform`
-- Mode: `MVP`
-- State: `in_progress`
-- Branch: `feature/003-teacher-intelligence-platform-implementation`
-
-## Approval Evidence
-
-- PR #7 merged into `main`.
-- Merge commit: `e459f07d80e1f6669be00b96085fc70e7fdeb2ed`.
-- The approved specification covers three synthetic teacher scenarios (Elena Ruiz, Marcus Thompson, Camila Santos), evidence-based coaching without opaque scoring or ranking, teacher-owned decision states, bounded experiment plans, outcome reviews, shared practice memory, and AC-01 through AC-18.
-
+No active feature.
 
 ## Completed Features
 
@@ -42,21 +32,27 @@
 - Typecheck, 16 tests, build, development runtime, desktop, tablet, mobile, keyboard controls, reduced motion, narrative, snapshot comprehension, junior safeguards, non-causal projections, Executive Tour regression, and Organizational Cortex regression passed
 - Reviewer artifact approved AC-01 through AC-18
 
-## SPEC-003 Scope
+### 003 — Teacher Intelligence Platform
 
-The Teacher Intelligence Platform specification defines:
+- State: `done`
+- Specification PR #7 merged into `main`
+- Specification merge commit: `e459f07d80e1f6669be00b96085fc70e7fdeb2ed`
+- Implementation PR #8 merged into `main`
+- Implementation merge commit: `ef850ed2796d50257d099c8fb53c56a1fb4be176`
+- Three synthetic teacher scenarios, lesson evidence explorer, behavior-to-outcome map, teacher-owned coaching decisions, bounded experiment planner, multidimensional outcome review, provisional shared practice memory, and responsible coaching controls implemented
+- Reviewer artifact: `progress/review_003-teacher-intelligence-platform.md`
+- Post-merge verification debt remains open because no GitHub Actions workflow or attached local command output was available at lifecycle close
 
-- three synthetic teacher scenarios with distinct contexts, strengths, learner outcomes, evidence confidence, limitations, and unknowns;
-- explicit separation of observed lesson events, learner outcomes, teacher reports, coach reports, derived patterns, inference, and unknowns;
-- a behavior-to-outcome map with plausible mechanism, counter-evidence, transferability constraints, confidence, and non-causal language;
-- at least three coaching options per teacher with complete metadata;
-- teacher-owned accept, adapt, defer, and reject states;
-- bounded experiment plans with indicators, guardrails, ownership, and stop conditions;
-- multidimensional outcome review and preserve, adapt, expand carefully, collect more evidence, or stop gates;
-- provisional shared practice memory with context, limitations, confidence, ownership, and review date;
-- explicit prohibition of opaque teacher scoring, leaderboards, punitive ranking, and automated employment decisions;
-- preservation of the Executive Tour, Organizational Cortex, Student Digital Twin, and executive narrative.
+## Product Rebaseline Decision
+
+The primary product is now the **Learning Intelligence Platform**.
+
+The existing executive transformation experience will be retained as a hidden or role-gated strategic module rather than the default application experience.
+
+`004-agentic-build-engine` and `005-executive-blueprint` remain pending but are deferred behind the product rebaseline.
 
 ## Current Gate
 
-Run verification, fix any failures, build components, and track progress on SPEC-003.
+Create and approve `P-000-learning-intelligence-platform-rebaseline` before adding new product screens, backend services, agents, or integrations.
+
+The rebaseline must define product vision, users, jobs to be done, domain boundaries, navigation, MVP scope, architecture, data and integration assumptions, roles, governance, metrics, team, roadmap, and delivery sizing.
