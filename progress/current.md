@@ -4,8 +4,15 @@
 
 - Feature: `003-teacher-intelligence-platform`
 - Mode: `MVP`
-- State: `spec_ready`
-- Branch: `feature/003-teacher-intelligence-platform-spec`
+- State: `in_progress`
+- Branch: `feature/003-teacher-intelligence-platform-implementation`
+
+## Approval Evidence
+
+- PR #7 merged into `main`.
+- Merge commit: `e459f07d80e1f6669be00b96085fc70e7fdeb2ed`.
+- The approved specification covers three synthetic teacher scenarios (Elena Ruiz, Marcus Thompson, Camila Santos), evidence-based coaching without opaque scoring or ranking, teacher-owned decision states, bounded experiment plans, outcome reviews, shared practice memory, and AC-01 through AC-18.
+
 
 ## Completed Features
 
@@ -52,4 +59,4 @@ The Teacher Intelligence Platform specification defines:
 
 ## Current Gate
 
-Human approval is required before implementation. No application code may change while `003-teacher-intelligence-platform` remains `spec_ready`.
+Run verification, fix any failures, build components, and track progress on SPEC-003.
