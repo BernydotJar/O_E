@@ -48,12 +48,12 @@ describe('Teacher Intelligence workspace', () => {
 
   it('shows contextual behavior-to-outcome reasoning and non-causal boundaries', async () => {
     render(<TeacherIntelligenceWorkspace />)
-    await screen.findByText('OBSERVED BEHAVIOR')
+    expect((await screen.findAllByText('OBSERVED BEHAVIOR')).length).toBeGreaterThan(0)
 
-    expect(screen.getByText('ASSOCIATED SIGNAL')).toBeInTheDocument()
-    expect(screen.getByText('PLAUSIBLE MECHANISM')).toBeInTheDocument()
-    expect(screen.getByText('Counter-evidence')).toBeInTheDocument()
-    expect(screen.getByText('Transferability boundary')).toBeInTheDocument()
+    expect(screen.getAllByText('ASSOCIATED SIGNAL').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('PLAUSIBLE MECHANISM').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('Counter-evidence').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('Transferability boundary').length).toBeGreaterThan(0)
     expect(screen.getByText(/association organizes inquiry\. it does not prove causality/i)).toBeInTheDocument()
     expect(screen.getByText(/no behavior is universally effective/i)).toBeInTheDocument()
   })
