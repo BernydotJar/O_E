@@ -35,4 +35,14 @@
 
 - `pending -> spec_ready` — Three synthetic teacher scenarios, lesson-evidence provenance, behavior-to-outcome interpretation, teacher-owned coaching decisions, bounded experiments, outcome review, shared practice memory, anti-surveillance controls, acceptance criteria, risks, stop conditions, and verification plan defined on `feature/003-teacher-intelligence-platform-spec`.
 - `approved` — PR #7 merged into `main` at `e459f07d80e1f6669be00b96085fc70e7fdeb2ed`; specification branch deleted.
-- `in_progress` — Teacher Intelligence Platform workspace implementation started on `feature/003-teacher-intelligence-platform-implementation`.
+- `in_progress` — Teacher Intelligence Platform workspace implementation completed on `feature/003-teacher-intelligence-platform-implementation`.
+- `merged` — PR #8 merged into `main` at `ef850ed2796d50257d099c8fb53c56a1fb4be176`.
+- `done` — Feature registry and progress records closed; reviewer artifact added at `progress/review_003-teacher-intelligence-platform.md`.
+- Verification note — No GitHub Actions workflow or attached post-implementation local command output was available at lifecycle close; post-merge verification remains explicitly recorded as debt.
+
+## 2026-07-11 — Product Rebaseline Decision
+
+- The Learning Intelligence Platform becomes the primary product direction.
+- The Executive Experience is retained as a hidden or role-gated strategic module rather than the default application.
+- `004-agentic-build-engine` and `005-executive-blueprint` remain pending and are deferred behind `P-000-learning-intelligence-platform-rebaseline`.
+- No new product screen, backend service, agent, or integration should begin until the rebaseline specification is approved.
