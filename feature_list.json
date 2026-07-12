@@ -2,15 +2,7 @@
   "repository": "O_E",
   "program": "Open English AI-Native Transformation",
   "tagline": "Every interaction teaches the company.",
-  "allowed_statuses": [
-    "pending",
-    "spec_ready",
-    "approved",
-    "in_progress",
-    "review",
-    "done",
-    "blocked"
-  ],
+  "allowed_statuses": ["pending", "spec_ready", "approved", "in_progress", "review", "done", "blocked"],
   "features": [
     {
       "id": "000-organizational-cortex",
@@ -44,22 +36,29 @@
       "id": "P-000-learning-intelligence-platform-rebaseline",
       "title": "Learning Intelligence Platform Rebaseline",
       "mode": "MVP",
+      "status": "approved",
+      "summary": "Approved product rebaseline establishing Learning Intelligence Platform as the primary product and Executive Experience as a private strategic module."
+    },
+    {
+      "id": "P-001-learning-intelligence-platform-application-shell",
+      "title": "Learning Intelligence Platform Application Shell and Role-Aware Navigation",
+      "mode": "MVP",
       "status": "spec_ready",
-      "summary": "Rebaseline the repository around Learning Intelligence Platform as the primary product, defining users, jobs, domains, information architecture, MVP, system boundaries, data, governance, metrics, team, roadmap, sizing, pilot strategy, and the private treatment of Executive Experience before further implementation."
+      "summary": "Define the default LIP shell, role-aware navigation and routes, module composition, Executive Experience isolation, accessibility, localization, migration, rollout, rollback, and verification boundaries."
     },
     {
       "id": "004-agentic-build-engine",
       "title": "Agentic Build Engine",
       "mode": "MVP",
       "status": "pending",
-      "summary": "Visualize the spec-to-deploy engineering loop, agent roles, evaluation coverage, review gates, and delivery evidence. Deferred until P-000 is approved."
+      "summary": "Visualize the spec-to-deploy engineering loop, agent roles, evaluation coverage, review gates, and delivery evidence. Deferred behind the Learning Intelligence product sequence."
     },
     {
       "id": "005-executive-blueprint",
       "title": "AI-Native Transformation Blueprint",
       "mode": "MVP",
       "status": "pending",
-      "summary": "Generate the CEO, CFO, and Board transformation document from approved program specifications and architecture decisions. Deferred until P-000 is approved."
+      "summary": "Generate the CEO, CFO, and Board transformation document from approved program specifications and architecture decisions. Deferred behind the Learning Intelligence product sequence."
     }
   ]
 }
