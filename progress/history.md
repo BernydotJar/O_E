@@ -30,3 +30,8 @@
 - Manual review — Desktop, tablet, mobile, keyboard controls, reduced motion, four-minute narrative, 30-second snapshot, shared-screen legibility, junior safeguards, non-causal projections, Executive Tour regression, and Organizational Cortex regression all PASS.
 - `review` — Reviewer artifact created with AC-01 through AC-18 traceability and recommendation to approve for merge.
 - `done` — PR #6 merged into `main` at `b21a66d4299e0dc25afb24db46031df2d4cb5091`; implementation branch deleted.
+
+## 2026-07-11 — 003 Teacher Intelligence Platform
+
+- `pending -> spec_ready` — Three synthetic teacher scenarios, lesson-evidence provenance, behavior-to-outcome interpretation, teacher-owned coaching decisions, bounded experiments, outcome review, shared practice memory, anti-surveillance controls, acceptance criteria, risks, stop conditions, and verification plan defined on `feature/003-teacher-intelligence-platform-spec`.
+- Human approval required before implementation.
