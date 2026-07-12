@@ -2,7 +2,10 @@
 
 ## Active Feature
 
-No active feature.
+- Feature: `003-teacher-intelligence-platform`
+- Mode: `MVP`
+- State: `spec_ready`
+- Branch: `feature/003-teacher-intelligence-platform-spec`
 
 ## Completed Features
 
@@ -32,6 +35,21 @@ No active feature.
 - Typecheck, 16 tests, build, development runtime, desktop, tablet, mobile, keyboard controls, reduced motion, narrative, snapshot comprehension, junior safeguards, non-causal projections, Executive Tour regression, and Organizational Cortex regression passed
 - Reviewer artifact approved AC-01 through AC-18
 
+## SPEC-003 Scope
+
+The Teacher Intelligence Platform specification defines:
+
+- three synthetic teacher scenarios with distinct contexts, strengths, learner outcomes, evidence confidence, limitations, and unknowns;
+- explicit separation of observed lesson events, learner outcomes, teacher reports, coach reports, derived patterns, inference, and unknowns;
+- a behavior-to-outcome map with plausible mechanism, counter-evidence, transferability constraints, confidence, and non-causal language;
+- at least three coaching options per teacher with complete metadata;
+- teacher-owned accept, adapt, defer, and reject states;
+- bounded experiment plans with indicators, guardrails, ownership, and stop conditions;
+- multidimensional outcome review and preserve, adapt, expand carefully, collect more evidence, or stop gates;
+- provisional shared practice memory with context, limitations, confidence, ownership, and review date;
+- explicit prohibition of opaque teacher scoring, leaderboards, punitive ranking, and automated employment decisions;
+- preservation of the Executive Tour, Organizational Cortex, Student Digital Twin, and executive narrative.
+
 ## Current Gate
 
-Select exactly one pending feature and create its complete specification before implementation. The next selected feature is expected to be `003-teacher-intelligence-platform`.
+Human approval is required before implementation. No application code may change while `003-teacher-intelligence-platform` remains `spec_ready`.
