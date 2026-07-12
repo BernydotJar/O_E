@@ -30,7 +30,7 @@
       "id": "002-student-digital-twin",
       "title": "Student Digital Twin",
       "mode": "MVP",
-      "status": "review",
+      "status": "done",
       "summary": "Create a privacy-aware, explainable learner-state workspace that separates evidence, inference, uncertainty, human intervention decisions, projected outcomes, and validated learning impact."
     },
     {
