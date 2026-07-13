@@ -4,61 +4,36 @@
 
 ### P-001 — Learning Intelligence Platform Application Shell and Role-Aware Navigation
 
-- State: `spec_ready`
+- State: `review`
 - Mode: `MVP`
-- Branch: `agent/p-001-learning-intelligence-shell-navigation-spec`
-- Scope: specification, lifecycle, migration design, and human review only
-- Application implementation: not started and not authorized
+- Specification PR: #10 merged into `main` at `3628092019c59ce4f8b94e5c29e41eafe4cc364f`
+- Implementation branch: `agent/p-001-learning-intelligence-shell-navigation-implementation`
+- Application implementation: complete within approved frontend boundaries
 
-P-001 defines:
+## Implemented
 
-- Learning Intelligence Platform Home as the default route;
-- primary navigation: Home, Learners, Teachers, Interventions, Outcomes, Knowledge, Operations;
-- role-aware navigation, visibility, disabled states, and safe redirects;
-- route hierarchy, breadcrumbs, deep links, history, and recovery behavior;
-- loading, empty, error, unauthorized, unavailable, and not-found states;
-- Student Digital Twin, Teacher Intelligence, and Organizational Cortex composition;
-- private Executive Experience routing and entitlement simulation;
-- responsive, accessibility, reduced-motion, and English/Spanish requirements;
-- future implementation file boundaries;
-- migration, rollout, rollback, testing, risks, and evidence requirements.
+- Learning Intelligence Platform is the root and default application experience.
+- Ordered navigation: Home, Learners, Teachers, Interventions, Outcomes, Knowledge, Operations.
+- Typed History API routing with deep links, browser history, not-found, unauthorized, and unavailable recovery.
+- Synthetic role/capability model with a persistent disclosure that it is not authentication or security enforcement.
+- Student Digital Twin and Teacher Intelligence preserved through learner and teacher detail composition.
+- Organizational Cortex represented as the evidence-to-memory loop on Home.
+- Executive Experience retained only at `/strategic/executive`, absent from standard navigation, and gated by explicit executive role plus demo entitlement.
+- Centralized English/Spanish shell copy.
+- Skip link, semantic landmarks, route announcements, managed focus, visible focus, responsive navigation, and reduced-motion support.
+- Shell-specific automated tests and reviewer evidence.
+
+## Verification
+
+- A reconstructed local harness using equivalent module interfaces reported typecheck PASS, 12 tests PASS, build PASS, and Vite HTTP 200 for root and deep-link paths.
+- The execution environment could not clone or fetch the real GitHub checkout because DNS resolution for `github.com` was unavailable.
+- No GitHub Actions workflow is attached to provide independent branch execution evidence.
+- Full regression execution against the exact existing Student Twin, Teacher Intelligence, and Executive Experience implementations remains a review debt and must be completed before merge.
 
 ## Human Gate
 
-Review and explicitly approve:
-
-1. the canonical routes and navigation order;
-2. the role/capability matrix and hidden-versus-disabled behavior;
-3. the internal History API router approach unless a dependency is separately approved;
-4. preservation of Student Twin, Teacher Intelligence, and Cortex through adapters;
-5. Executive Experience isolation at `/strategic/executive`;
-6. future file boundaries and migration sequence;
-7. rollout, rollback, accessibility, localization, and verification requirements.
-
-Until approval, do not implement components, routes, styles, permissions, feature flags, dependencies, or application changes.
-
-## Approved Product Foundation
-
-### P-000 — Learning Intelligence Platform Rebaseline
-
-- State: `approved`
-- Specification PR: #9
-- Merge commit: `edd8a6dc1339a5ef11db81387665bc2841069641`
-- Human approval: represented by merge of the specification PR
-- Product decision: LIP is primary; Executive Experience is retained privately
-
-## Completed Features
-
-- `000-organizational-cortex` — done
-- `001-executive-ai-native-landing` — done
-- `002-student-digital-twin` — done
-- `003-teacher-intelligence-platform` — done
-
-## Deferred Features
-
-- `004-agentic-build-engine` remains pending behind the Learning Intelligence product sequence.
-- `005-executive-blueprint` remains pending behind the Learning Intelligence product sequence.
+Review the implementation diff, execute the repository checks on the real branch, validate responsive/accessibility/localization behavior, and confirm Executive Experience isolation before merge.
 
 ## Next Safe Action
 
-Human review of the P-001 specification PR. The next lifecycle transition may be `approved` only after explicit approval.
+Do not merge until the verification debt above is resolved or explicitly accepted by the repository owner.
