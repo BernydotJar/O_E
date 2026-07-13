@@ -31,8 +31,11 @@
 
 - `pending -> spec_ready` — Shell, route, role, access, state, module-composition, accessibility, localization, migration, rollout, rollback, and verification contracts defined.
 - `approved` — Specification PR #10 merged at `3628092019c59ce4f8b94e5c29e41eafe4cc364f`.
-- `in_progress` — Implementation started on `agent/p-001-learning-intelligence-shell-navigation-implementation`.
-- Implemented — LIP root shell; seven-item role-aware navigation; typed History API router; breadcrumbs and recovery; synthetic access controls; Student Twin and Teacher Intelligence composition; Home Cortex; private Executive Experience; English/Spanish catalog; responsive and accessibility behavior.
-- Verification — Reconstructed local harness reported typecheck PASS, 12 tests PASS, build PASS, and Vite HTTP 200 for root and deep-link routes.
-- Verification debt — Exact repository checkout could not be cloned because the execution environment could not resolve `github.com`; no GitHub Actions workflow supplied independent CI evidence.
-- `review` — Reviewer artifact created at `progress/review_P-001-learning-intelligence-platform-application-shell.md`; exact-checkout regression execution and manual review are required before merge.
+- `in_progress` — Initial implementation started on `agent/p-001-learning-intelligence-shell-navigation-implementation`.
+- Initial implementation — LIP root shell, seven-item role-aware navigation, History API router, module composition, private Executive Experience, localization, accessibility, and route states.
+- Initial review — User requested changes because the shell was structurally correct but visually flat, overly monochrome, insufficiently differentiated by role, and weak in unavailable-domain states.
+- `P-001A approved` — The execution command conditionally approved the Cinematic Role-Aware Experience Upgrade without an intermediate spec gate.
+- P-001A implementation — Added seven role-specific Home experiences, original inline SVG scenes, institutional joyful visual tokens, honest cinematic previews, improved timeline presentation, responsive intervention grid, localized role content, and reduced-motion behavior.
+- P-001A verification — Reconstructed workspace reported TypeScript PASS, 6/6 automated tests PASS, and production build PASS.
+- Verification debt — Exact branch checkout and full regressions against existing Student Twin, Teacher Intelligence, and Executive Experience remain required before merge.
+- `review` — PR #11 updated for final human visual and exact-checkout verification.
