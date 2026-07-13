@@ -4,61 +4,39 @@
 
 ### P-001 — Learning Intelligence Platform Application Shell and Role-Aware Navigation
 
-- State: `spec_ready`
+- State: `review`
 - Mode: `MVP`
-- Branch: `agent/p-001-learning-intelligence-shell-navigation-spec`
-- Scope: specification, lifecycle, migration design, and human review only
-- Application implementation: not started and not authorized
+- Specification PR: #10 merged into `main` at `3628092019c59ce4f8b94e5c29e41eafe4cc364f`
+- Implementation branch: `agent/p-001-learning-intelligence-shell-navigation-implementation`
+- Draft implementation PR: #11
+- Addendum: `P-001A — Cinematic Role-Aware Experience Upgrade`, conditionally approved and implemented
 
-P-001 defines:
+## Implemented
 
-- Learning Intelligence Platform Home as the default route;
-- primary navigation: Home, Learners, Teachers, Interventions, Outcomes, Knowledge, Operations;
-- role-aware navigation, visibility, disabled states, and safe redirects;
-- route hierarchy, breadcrumbs, deep links, history, and recovery behavior;
-- loading, empty, error, unauthorized, unavailable, and not-found states;
-- Student Digital Twin, Teacher Intelligence, and Organizational Cortex composition;
-- private Executive Experience routing and entitlement simulation;
-- responsive, accessibility, reduced-motion, and English/Spanish requirements;
-- future implementation file boundaries;
-- migration, rollout, rollback, testing, risks, and evidence requirements.
+- Learning Intelligence Platform is the root and default experience.
+- Role-aware navigation and typed History API routing remain intact.
+- Seven roles now receive distinct cinematic Home compositions with mission, priority, metrics, actions, memory preview, accent theme, and original inline SVG visual.
+- Institutional navy/blue remains primary with cyan, aqua, coral, warm yellow, and violet role accents.
+- Student Digital Twin, Teacher Intelligence, and Executive Experience remain bounded child modules.
+- Evidence Timeline retains time, source, evidence kind, event, and signal interpretation while using a denser responsive composition.
+- Intervention Studio uses a flexible grid intended to prevent clipped cards and horizontal overflow.
+- Pending domains use honest cinematic previews with purpose, expected evidence, human decision, future artifact, and lifecycle gate.
+- Executive Experience remains outside standard navigation and requires executive demo role plus explicit entitlement.
+- English and Spanish shell and role-specific Home content are centralized.
+- Skip link, visible focus, route announcements, keyboard navigation, responsive menu, and reduced-motion behavior remain present.
+
+## Verification
+
+- Reconstructed verification workspace: TypeScript PASS.
+- Automated tests: 6/6 PASS.
+- Production build: PASS.
+- Generated bundle: CSS 12.72 kB; JS 220.28 kB before gzip.
+- Tests cover role differentiation, ordered navigation, Evidence Timeline provenance, honest preview state, executive isolation, and localization.
+
+## Verification Debt
+
+The execution environment could not clone the exact GitHub branch. Existing Student Twin, Teacher Intelligence, and Executive Experience were represented by equivalent interfaces in the verification workspace. Exact-checkout commands and final visual regression across the real modules remain required before merge.
 
 ## Human Gate
 
-Review and explicitly approve:
-
-1. the canonical routes and navigation order;
-2. the role/capability matrix and hidden-versus-disabled behavior;
-3. the internal History API router approach unless a dependency is separately approved;
-4. preservation of Student Twin, Teacher Intelligence, and Cortex through adapters;
-5. Executive Experience isolation at `/strategic/executive`;
-6. future file boundaries and migration sequence;
-7. rollout, rollback, accessibility, localization, and verification requirements.
-
-Until approval, do not implement components, routes, styles, permissions, feature flags, dependencies, or application changes.
-
-## Approved Product Foundation
-
-### P-000 — Learning Intelligence Platform Rebaseline
-
-- State: `approved`
-- Specification PR: #9
-- Merge commit: `edd8a6dc1339a5ef11db81387665bc2841069641`
-- Human approval: represented by merge of the specification PR
-- Product decision: LIP is primary; Executive Experience is retained privately
-
-## Completed Features
-
-- `000-organizational-cortex` — done
-- `001-executive-ai-native-landing` — done
-- `002-student-digital-twin` — done
-- `003-teacher-intelligence-platform` — done
-
-## Deferred Features
-
-- `004-agentic-build-engine` remains pending behind the Learning Intelligence product sequence.
-- `005-executive-blueprint` remains pending behind the Learning Intelligence product sequence.
-
-## Next Safe Action
-
-Human review of the P-001 specification PR. The next lifecycle transition may be `approved` only after explicit approval.
+Review the updated PR #11 visually and execute the repository checks on the exact branch before merge. Do not merge until the debt is resolved or explicitly accepted.
