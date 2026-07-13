@@ -1,0 +1,12 @@
+export type Locale = 'en' | 'es'
+
+export const messages = {
+  en: {
+    app: 'Learning Intelligence Platform', home: 'Home', learners: 'Learners', teachers: 'Teachers', interventions: 'Interventions', outcomes: 'Outcomes', knowledge: 'Knowledge', operations: 'Operations', admin: 'Administration', governance: 'Governance', integrations: 'Integrations', role: 'Demo role', language: 'Language', menu: 'Menu', skip: 'Skip to main content', disclosure: 'Demo access only. Role selection is not authentication or security enforcement.', synthetic: 'Synthetic data. No production or proprietary records.', unavailable: 'This domain is intentionally unavailable until its specification is approved.', unauthorized: 'You do not have access to this area in the current demo role.', notFound: 'The requested page was not found.', backHome: 'Back to Home', executive: 'Executive Experience', grant: 'Enable executive demo entitlement', revoke: 'Disable executive demo entitlement', pageChanged: 'Page changed to', open: 'Open record', empty: 'No records are available for this synthetic scenario.', loading: 'Loading route…', error: 'The route could not be rendered. Return to a safe page and retry.'
+  },
+  es: {
+    app: 'Plataforma de Inteligencia de Aprendizaje', home: 'Inicio', learners: 'Estudiantes', teachers: 'Docentes', interventions: 'Intervenciones', outcomes: 'Resultados', knowledge: 'Conocimiento', operations: 'Operaciones', admin: 'Administración', governance: 'Gobernanza', integrations: 'Integraciones', role: 'Rol de demostración', language: 'Idioma', menu: 'Menú', skip: 'Saltar al contenido principal', disclosure: 'Acceso de demostración. La selección de rol no es autenticación ni control de seguridad.', synthetic: 'Datos sintéticos. No son registros productivos ni propietarios.', unavailable: 'Este dominio no está disponible hasta que su especificación sea aprobada.', unauthorized: 'El rol de demostración actual no tiene acceso a esta área.', notFound: 'No se encontró la página solicitada.', backHome: 'Volver al inicio', executive: 'Experiencia Ejecutiva', grant: 'Habilitar acceso ejecutivo de demostración', revoke: 'Deshabilitar acceso ejecutivo de demostración', pageChanged: 'Página cambiada a', open: 'Abrir registro', empty: 'No hay registros para este escenario sintético.', loading: 'Cargando ruta…', error: 'No se pudo mostrar la ruta. Regresa a una página segura e inténtalo de nuevo.'
+  }
+} as const
+
+export type MessageKey = keyof typeof messages.en
